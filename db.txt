@@ -1,0 +1,17 @@
+
+.env 👇👇👇
+SERVER_PORT=4000
+DB_PORT=5432
+DB_USER=your_username
+DB_PASSWORD=your_password
+DATABASE=postgres
+HOST=localhost
+
+PostgreSQL 👇👇👇
+CREATE TABLE IF NOT EXISTS users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  age INT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
